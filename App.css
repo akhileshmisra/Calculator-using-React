@@ -1,0 +1,69 @@
+/* General styles for the calculator */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.calculator-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
+
+button:nth-child(4n) {
+  background-color: #f7a700;
+  color: white;
+}
+
+button:nth-child(4n):hover {
+  background-color: #e68900;
+}
+
+/* Footer Styling */
+.footer {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
